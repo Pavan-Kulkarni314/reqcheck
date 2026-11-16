@@ -1,0 +1,1520 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<REQ-IF xmlns="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd">
+  <THE-HEADER>
+    <REQ-IF-HEADER IDENTIFIER="_b6bf1aad-e3ca-41a8-9cce-06a3be9d4387">
+      <CREATION-TIME>2026-11-15T15:15:34Z</CREATION-TIME>
+      <REQ-IF-TOOL-ID>reqcheck</REQ-IF-TOOL-ID>
+      <REQ-IF-VERSION>1.0</REQ-IF-VERSION>
+      <SOURCE-TOOL-ID>reqcheck</SOURCE-TOOL-ID>
+      <TITLE>Adaptive Cruise Control (ACC)</TITLE>
+    </REQ-IF-HEADER>
+  </THE-HEADER>
+  <CORE-CONTENT>
+    <REQ-IF-CONTENT>
+      <DATATYPES>
+        <DATATYPE-DEFINITION-STRING IDENTIFIER="DT-STRING" LONG-NAME="String" MAX-LENGTH="4000" LAST-CHANGE="2026-11-15T15:15:34Z" />
+      </DATATYPES>
+      <SPEC-TYPES>
+        <SPEC-OBJECT-TYPE IDENTIFIER="SOT-ITEM" LONG-NAME="Requirement or Test" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="AD-ID" LONG-NAME="ReqIF.ForeignID" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>DT-STRING</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="AD-TEXT" LONG-NAME="ReqIF.Text" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>DT-STRING</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="AD-TYPE" LONG-NAME="Type" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>DT-STRING</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="AD-METHOD" LONG-NAME="Verification Method" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>DT-STRING</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+          </SPEC-ATTRIBUTES>
+        </SPEC-OBJECT-TYPE>
+        <SPEC-RELATION-TYPE IDENTIFIER="SRT-DERIVED" LONG-NAME="derived from" LAST-CHANGE="2026-11-15T15:15:34Z" />
+        <SPEC-RELATION-TYPE IDENTIFIER="SRT-VERIFIES" LONG-NAME="verifies" LAST-CHANGE="2026-11-15T15:15:34Z" />
+        <SPECIFICATION-TYPE IDENTIFIER="ST-SPEC" LONG-NAME="Specification" LAST-CHANGE="2026-11-15T15:15:34Z" />
+      </SPEC-TYPES>
+      <SPEC-OBJECTS>
+        <SPEC-OBJECT IDENTIFIER="SO-STK-01" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="STK-01">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The driver needs the vehicle to hold a chosen speed without pressing the accelerator pedal.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="stakeholder">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-STK-02" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="STK-02">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The driver needs the vehicle to keep a safe distance to the vehicle ahead automatically.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="stakeholder">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-STK-03" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="STK-03">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The driver needs to be able to override or switch off the function at any time.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="stakeholder">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-STK-04" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="STK-04">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The driver needs to know at all times whether the function is controlling the vehicle.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="stakeholder">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-STK-05" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="STK-05">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Passengers need speed changes made by the function to feel smooth.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="stakeholder">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-STK-06" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="STK-06">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The vehicle owner needs the function to hand control back safely when something goes wrong.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="stakeholder">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-01" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-01">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The ACC system shall allow the driver to select a set speed from 30 km/h to 160 km/h.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-02" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-02">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="While no vehicle is ahead and the road is level, the ACC system shall keep the vehicle speed within 2 km/h of the set speed.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-03" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-03">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The ACC system shall activate only when the vehicle speed is at least 30 km/h and no system fault is present.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-04" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-04">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The ACC system shall offer at least 3 selectable time gaps between 1.0 s and 2.2 s.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-05" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-05">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="While following a vehicle that drives at constant speed, the ACC system shall hold the selected time gap within 0.2 s.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-06" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-06">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The ACC system shall not request a vehicle deceleration greater than 3.5 m/s².">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-07" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-07">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The ACC system shall not request a vehicle acceleration greater than 2.0 m/s².">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-08" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-08">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="When the driver presses the brake pedal, the ACC system shall switch to standby within 100 ms.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-09" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-09">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="While the driver presses the accelerator pedal, the ACC system shall not request any deceleration.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-10" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-10">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The ACC system shall display the current ACC state, the set speed and the selected time gap to the driver.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-11" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-11">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="When the deceleration needed to keep the time gap exceeds 3.5 m/s², the ACC system shall give the driver a visual and acoustic takeover request within 200 ms.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-SYS-12" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SYS-12">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="When the radar sensor reports a fault or blockage, the ACC system shall switch to the fault state and inform the driver within 500 ms.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-CMP-RAD-01" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="CMP-RAD-01">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The front radar shall detect vehicles in the ego lane at distances up to at least 150 m.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="component">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-CMP-RAD-02" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="CMP-RAD-02">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The front radar shall send an updated object list at least every 50 ms.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="component">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-CMP-RAD-03" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="CMP-RAD-03">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The front radar shall report a sensor blockage to the ACC control unit within 300 ms after the blockage starts.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="component">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-CMP-ECU-01" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="CMP-ECU-01">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The ACC control unit shall calculate a new acceleration request at least every 20 ms.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="component">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-CMP-ECU-02" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="CMP-ECU-02">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The ACC control unit shall limit every acceleration request to the range from -3.5 m/s² to +2.0 m/s².">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="component">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-CMP-HMI-01" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="CMP-HMI-01">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The instrument cluster shall show a new ACC state within 100 ms after the state message arrives.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="component">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-01" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-01">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Test track: try to set 25, 30, 160 and 165 km/h. Pass if 30 and 160 km/h are accepted and 25 and 165 km/h are rejected.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-02" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-02">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Test track, level road, no vehicle ahead: hold 100 km/h for 60 s and log the speed. Pass if the speed stays within 2 km/h of the set speed.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-03" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-03">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="HIL: press Set at 25 km/h, at 30 km/h, and at 50 km/h with an injected radar fault. Pass if only the 30 km/h case activates.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-04" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-04">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Step through all time gap settings in the vehicle and record them. Pass if at least 3 settings exist, all between 1.0 s and 2.2 s.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="inspection">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-05" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-05">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Test track: follow a target vehicle driving at a constant 80 km/h for each time gap setting. Pass if the measured time gap stays within 0.2 s of the setting.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-06" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-06">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="HIL: run cut-in, hard-braking target and target-leaving scenarios and log the acceleration request. Pass if it stays between -3.5 and +2.0 m/s².">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-07" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-07">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="HIL: with ACC active at 80 km/h, send a brake pedal signal and measure the time until the ACC state is standby.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-08" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-08">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="HIL: while following a braking target, press the accelerator. Pass if no deceleration is requested while the pedal is pressed.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-09" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-09">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="In the vehicle: go through off, standby, active and fault and check the display in each state. Pass if state, set speed and time gap are always shown.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="demonstration">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-10" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-10">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="HIL: let the target brake at 6 m/s². Pass if visual and acoustic warnings start within 200 ms after the needed deceleration exceeds 3.5 m/s².">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-11" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-11">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="HIL: inject a radar blockage while ACC is active. Pass if the state is fault and the driver is informed within 500 ms.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-12" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-12">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Analysis: run ACC_Analysis::radarRangeCheck and compare the result with the radar data sheet.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="analysis">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-13" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-13">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="HIL: log the radar object list messages for 10 min. Pass if the longest interval between two messages is at most 50 ms.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="SO-TC-14" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="TC-14">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-ID</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="HIL: log the ACC acceleration request messages for 10 min. Pass if the longest interval between two messages is at most 20 ms.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TEXT</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-TYPE</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="test">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>AD-METHOD</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>SOT-ITEM</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+      </SPEC-OBJECTS>
+      <SPEC-RELATIONS>
+        <SPEC-RELATION IDENTIFIER="SR-1" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-01</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-01</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-2" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-02</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-01</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-3" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-03</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-01</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-4" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-04</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-02</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-5" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-05</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-02</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-6" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-06</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-05</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-7" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-07</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-05</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-8" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-08</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-03</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-9" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-09</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-03</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-10" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-10</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-04</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-11" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-11</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-06</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-12" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-SYS-12</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-STK-06</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-13" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-CMP-RAD-01</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-04</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-14" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-CMP-RAD-02</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-05</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-15" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-CMP-RAD-03</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-12</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-16" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-CMP-ECU-01</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-05</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-17" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-CMP-ECU-02</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-06</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-18" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-DERIVED</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-CMP-HMI-01</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-10</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-19" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-01</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-01</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-20" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-02</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-02</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-21" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-03</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-03</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-22" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-04</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-04</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-23" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-05</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-05</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-24" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-06</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-06</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-25" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-06</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-07</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-26" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-07</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-08</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-27" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-08</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-09</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-28" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-09</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-10</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-29" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-10</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-11</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-30" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-11</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-SYS-12</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-31" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-12</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-CMP-RAD-01</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-32" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-13</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-CMP-RAD-02</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="SR-33" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPEC-RELATION-TYPE-REF>SRT-VERIFIES</SPEC-RELATION-TYPE-REF>
+          </TYPE>
+          <SOURCE>
+            <SPEC-OBJECT-REF>SO-TC-14</SPEC-OBJECT-REF>
+          </SOURCE>
+          <TARGET>
+            <SPEC-OBJECT-REF>SO-CMP-ECU-01</SPEC-OBJECT-REF>
+          </TARGET>
+        </SPEC-RELATION>
+      </SPEC-RELATIONS>
+      <SPECIFICATIONS>
+        <SPECIFICATION IDENTIFIER="SPEC-1" LONG-NAME="Adaptive Cruise Control (ACC)" LAST-CHANGE="2026-11-15T15:15:34Z">
+          <TYPE>
+            <SPECIFICATION-TYPE-REF>ST-SPEC</SPECIFICATION-TYPE-REF>
+          </TYPE>
+          <CHILDREN>
+            <SPEC-HIERARCHY IDENTIFIER="SH-1" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-STK-01</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-2" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-STK-02</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-3" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-STK-03</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-4" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-STK-04</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-5" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-STK-05</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-6" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-STK-06</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-7" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-01</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-8" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-02</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-9" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-03</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-10" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-04</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-11" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-05</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-12" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-06</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-13" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-07</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-14" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-08</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-15" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-09</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-16" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-10</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-17" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-11</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-18" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-SYS-12</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-19" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-CMP-RAD-01</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-20" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-CMP-RAD-02</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-21" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-CMP-RAD-03</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-22" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-CMP-ECU-01</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-23" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-CMP-ECU-02</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-24" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-CMP-HMI-01</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-25" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-01</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-26" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-02</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-27" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-03</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-28" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-04</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-29" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-05</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-30" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-06</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-31" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-07</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-32" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-08</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-33" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-09</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-34" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-10</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-35" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-11</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-36" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-12</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-37" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-13</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="SH-38" LAST-CHANGE="2026-11-15T15:15:34Z">
+              <OBJECT>
+                <SPEC-OBJECT-REF>SO-TC-14</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+          </CHILDREN>
+        </SPECIFICATION>
+      </SPECIFICATIONS>
+    </REQ-IF-CONTENT>
+  </CORE-CONTENT>
+</REQ-IF>

@@ -1,0 +1,18 @@
+id,type,text,derived_from,verified_by,method
+STK-10,stakeholder,The driver needs help to stay in the lane on long motorway drives.,,,
+STK-11,stakeholder,The driver needs to stay responsible for steering.,,,
+STK-12,stakeholder,The driver needs to be warned before the vehicle leaves the lane by mistake.,,,
+SYS-101,system,The system should keep the vehicle in the lane.,STK-10,TC-101,
+SYS-102,system,The LKA system shall detect lane markings quickly and reliably.,STK-10,,
+SYS-103,system,The LKA system shall warn the driver and/or apply a steering torque when the vehicle leaves the lane.,STK-12,TC-102,
+SYS-104,system,The corrective steering torque shall be limited to TBD Nm.,STK-11,TC-103,
+SYS-105,system,"The LKA system shall work in all weather conditions such as rain, snow, fog etc.",STK-10,,
+SYS-106,system,"If possible, the LKA system shall switch off when the driver steers against it.",STK-11,TC-104,
+SYS-107,system,The LKA system shall react within a short time after it detects a lane departure.,STK-99,TC-102,
+SYS-108,system,The LKA system shall display its status and shall play a sound when it intervenes.,,TC-105,
+SYS-109,system,"When the vehicle crosses a lane marking without the turn indicator on, the LKA system shall apply a corrective steering torque of at most 3 Nm.",STK-12,TC-102,
+TC-101,test,Drive 50 km on a motorway with LKA active and count lane departures.,,,test
+TC-102,test,Drift over the lane marking at 80 km/h without indicator and log the steering torque.,,,test
+TC-103,test,Measure the maximum steering torque request on the HIL bench.,,,test
+TC-104,test,Steer against the LKA torque with 3 Nm and check that LKA switches off.,,,test
+TC-106,test,Check the LKA icon in the instrument cluster.,,,demonstration

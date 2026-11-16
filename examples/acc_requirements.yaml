@@ -1,0 +1,164 @@
+# Requirements of the Adaptive Cruise Control example.
+# Same IDs and texts as the SysML v2 model in the acc-sysml-v2 repository.
+# Values are illustrative and based on public literature, not on any company specification.
+
+project: Adaptive Cruise Control (ACC)
+requirements:
+- {id: STK-01, type: stakeholder, text: The driver needs the vehicle to hold a chosen speed without pressing the
+    accelerator pedal.}
+- {id: STK-02, type: stakeholder, text: The driver needs the vehicle to keep a safe distance to the vehicle ahead
+    automatically.}
+- {id: STK-03, type: stakeholder, text: The driver needs to be able to override or switch off the function at any
+    time.}
+- {id: STK-04, type: stakeholder, text: The driver needs to know at all times whether the function is controlling
+    the vehicle.}
+- {id: STK-05, type: stakeholder, text: Passengers need speed changes made by the function to feel smooth.}
+- {id: STK-06, type: stakeholder, text: The vehicle owner needs the function to hand control back safely when something
+    goes wrong.}
+- id: SYS-01
+  type: system
+  text: The ACC system shall allow the driver to select a set speed from 30 km/h to 160 km/h.
+  derived_from: [STK-01]
+- id: SYS-02
+  type: system
+  text: While no vehicle is ahead and the road is level, the ACC system shall keep the vehicle speed within 2 km/h
+    of the set speed.
+  derived_from: [STK-01]
+- id: SYS-03
+  type: system
+  text: The ACC system shall activate only when the vehicle speed is at least 30 km/h and no system fault is present.
+  derived_from: [STK-01]
+- id: SYS-04
+  type: system
+  text: The ACC system shall offer at least 3 selectable time gaps between 1.0 s and 2.2 s.
+  derived_from: [STK-02]
+- id: SYS-05
+  type: system
+  text: While following a vehicle that drives at constant speed, the ACC system shall hold the selected time gap
+    within 0.2 s.
+  derived_from: [STK-02]
+- id: SYS-06
+  type: system
+  text: The ACC system shall not request a vehicle deceleration greater than 3.5 m/s².
+  derived_from: [STK-05]
+- id: SYS-07
+  type: system
+  text: The ACC system shall not request a vehicle acceleration greater than 2.0 m/s².
+  derived_from: [STK-05]
+- id: SYS-08
+  type: system
+  text: When the driver presses the brake pedal, the ACC system shall switch to standby within 100 ms.
+  derived_from: [STK-03]
+- id: SYS-09
+  type: system
+  text: While the driver presses the accelerator pedal, the ACC system shall not request any deceleration.
+  derived_from: [STK-03]
+- id: SYS-10
+  type: system
+  text: The ACC system shall display the current ACC state, the set speed and the selected time gap to the driver.
+  derived_from: [STK-04]
+- id: SYS-11
+  type: system
+  text: When the deceleration needed to keep the time gap exceeds 3.5 m/s², the ACC system shall give the driver
+    a visual and acoustic takeover request within 200 ms.
+  derived_from: [STK-06]
+- id: SYS-12
+  type: system
+  text: When the radar sensor reports a fault or blockage, the ACC system shall switch to the fault state and inform
+    the driver within 500 ms.
+  derived_from: [STK-06]
+- id: CMP-RAD-01
+  type: component
+  text: The front radar shall detect vehicles in the ego lane at distances up to at least 150 m.
+  derived_from: [SYS-04]
+- id: CMP-RAD-02
+  type: component
+  text: The front radar shall send an updated object list at least every 50 ms.
+  derived_from: [SYS-05]
+- id: CMP-RAD-03
+  type: component
+  text: The front radar shall report a sensor blockage to the ACC control unit within 300 ms after the blockage
+    starts.
+  derived_from: [SYS-12]
+- id: CMP-ECU-01
+  type: component
+  text: The ACC control unit shall calculate a new acceleration request at least every 20 ms.
+  derived_from: [SYS-05]
+- id: CMP-ECU-02
+  type: component
+  text: The ACC control unit shall limit every acceleration request to the range from -3.5 m/s² to +2.0 m/s².
+  derived_from: [SYS-06]
+- id: CMP-HMI-01
+  type: component
+  text: The instrument cluster shall show a new ACC state within 100 ms after the state message arrives.
+  derived_from: [SYS-10]
+tests:
+- id: TC-01
+  method: test
+  text: 'Test track: try to set 25, 30, 160 and 165 km/h. Pass if 30 and 160 km/h are accepted and 25 and 165 km/h
+    are rejected.'
+  verifies: [SYS-01]
+- id: TC-02
+  method: test
+  text: 'Test track, level road, no vehicle ahead: hold 100 km/h for 60 s and log the speed. Pass if the speed stays
+    within 2 km/h of the set speed.'
+  verifies: [SYS-02]
+- id: TC-03
+  method: test
+  text: 'HIL: press Set at 25 km/h, at 30 km/h, and at 50 km/h with an injected radar fault. Pass if only the 30
+    km/h case activates.'
+  verifies: [SYS-03]
+- id: TC-04
+  method: inspection
+  text: Step through all time gap settings in the vehicle and record them. Pass if at least 3 settings exist, all
+    between 1.0 s and 2.2 s.
+  verifies: [SYS-04]
+- id: TC-05
+  method: test
+  text: 'Test track: follow a target vehicle driving at a constant 80 km/h for each time gap setting. Pass if the
+    measured time gap stays within 0.2 s of the setting.'
+  verifies: [SYS-05]
+- id: TC-06
+  method: test
+  text: 'HIL: run cut-in, hard-braking target and target-leaving scenarios and log the acceleration request. Pass
+    if it stays between -3.5 and +2.0 m/s².'
+  verifies: [SYS-06, SYS-07]
+- id: TC-07
+  method: test
+  text: 'HIL: with ACC active at 80 km/h, send a brake pedal signal and measure the time until the ACC state is
+    standby.'
+  verifies: [SYS-08]
+- id: TC-08
+  method: test
+  text: 'HIL: while following a braking target, press the accelerator. Pass if no deceleration is requested while
+    the pedal is pressed.'
+  verifies: [SYS-09]
+- id: TC-09
+  method: demonstration
+  text: 'In the vehicle: go through off, standby, active and fault and check the display in each state. Pass if
+    state, set speed and time gap are always shown.'
+  verifies: [SYS-10]
+- id: TC-10
+  method: test
+  text: 'HIL: let the target brake at 6 m/s². Pass if visual and acoustic warnings start within 200 ms after the
+    needed deceleration exceeds 3.5 m/s².'
+  verifies: [SYS-11]
+- id: TC-11
+  method: test
+  text: 'HIL: inject a radar blockage while ACC is active. Pass if the state is fault and the driver is informed
+    within 500 ms.'
+  verifies: [SYS-12]
+- id: TC-12
+  method: analysis
+  text: 'Analysis: run ACC_Analysis::radarRangeCheck and compare the result with the radar data sheet.'
+  verifies: [CMP-RAD-01]
+- id: TC-13
+  method: test
+  text: 'HIL: log the radar object list messages for 10 min. Pass if the longest interval between two messages is
+    at most 50 ms.'
+  verifies: [CMP-RAD-02]
+- id: TC-14
+  method: test
+  text: 'HIL: log the ACC acceleration request messages for 10 min. Pass if the longest interval between two messages
+    is at most 20 ms.'
+  verifies: [CMP-ECU-01]
